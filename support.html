@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support - Alarm Clock - Scan To Wake</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #FF3B30 0%, #FF6B6B 100%);
+            border-radius: 18px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 40px;
+        }
+        h1 {
+            color: #1a1a1a;
+            margin-bottom: 5px;
+            font-size: 28px;
+        }
+        .tagline {
+            color: #FF3B30;
+            font-weight: 500;
+        }
+        h2 {
+            color: #1a1a1a;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        h2 .icon {
+            font-size: 24px;
+        }
+        p {
+            margin-bottom: 15px;
+            color: #444;
+        }
+        .faq-item {
+            background: #f5f5f7;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 15px;
+        }
+        .faq-question {
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 10px;
+        }
+        .faq-answer {
+            color: #555;
+        }
+        .steps {
+            background: #f5f5f7;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+        .step {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+        .step:last-child {
+            margin-bottom: 0;
+        }
+        .step-number {
+            background: #FF3B30;
+            color: white;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 600;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+        .contact-box {
+            background: linear-gradient(135deg, #FF3B30 0%, #FF6B6B 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        .contact-box h2 {
+            color: white;
+            justify-content: center;
+            margin-top: 0;
+        }
+        .contact-box a {
+            color: white;
+            font-size: 18px;
+        }
+        .links {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 30px;
+            flex-wrap: wrap;
+        }
+        .links a {
+            color: #FF3B30;
+            text-decoration: none;
+            padding: 10px 20px;
+            border: 2px solid #FF3B30;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        .links a:hover {
+            background: #FF3B30;
+            color: white;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            color: #888;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="app-icon">⏰</div>
+            <h1>Alarm Clock - Scan To Wake</h1>
+            <p class="tagline">No scan. No silence.</p>
+        </div>
+
+        <h2><span class="icon">📖</span> How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <span class="step-number">1</span>
+                <div>
+                    <strong>Set Your Alarm</strong><br>
+                    Choose your wake-up time like any normal alarm clock.
+                </div>
+            </div>
+            <div class="step">
+                <span class="step-number">2</span>
+                <div>
+                    <strong>Register a Barcode</strong><br>
+                    Scan any barcode or QR code - your toothpaste, coffee, shampoo, or anything you want!
+                </div>
+            </div>
+            <div class="step">
+                <span class="step-number">3</span>
+                <div>
+                    <strong>Wake Up & Scan</strong><br>
+                    When the alarm rings, you MUST scan that exact barcode to stop it. No snooze cheating!
+                </div>
+            </div>
+        </div>
+
+        <h2><span class="icon">❓</span> Frequently Asked Questions</h2>
+        
+        <div class="faq-item">
+            <p class="faq-question">Why can't I stop the alarm without scanning?</p>
+            <p class="faq-answer">That's the whole point! The app is designed to force you out of bed. Place your barcode somewhere that requires you to physically get up - like the bathroom.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">What if I lose the barcode item?</p>
+            <p class="faq-answer">Go to Settings and use "Reset All Data" to clear all barcodes and alarms. Then set up new ones.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">Will the alarm work if my phone is on silent?</p>
+            <p class="faq-answer">Yes! The alarm is designed to play even when your phone is on silent mode, just like the built-in alarm.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">What types of barcodes work?</p>
+            <p class="faq-answer">Almost all types! QR codes, UPC codes (on products), EAN codes, Code 128, and many more. Most product barcodes will work.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">Does the app track my data?</p>
+            <p class="faq-answer">No! All your data stays on your device. We don't collect any personal information. See our <a href="privacy-policy.html">Privacy Policy</a> for details.</p>
+        </div>
+
+        <div class="faq-item">
+            <p class="faq-question">The alarm didn't go off. What happened?</p>
+            <p class="faq-answer">Make sure you've granted notification permissions and that "Do Not Disturb" is not blocking alarms. Also ensure the app isn't force-closed from the background.</p>
+        </div>
+
+        <div class="contact-box">
+            <h2><span class="icon">📧</span> Need More Help?</h2>
+            <p>We're here to help you wake up on time!</p>
+            <p><a href="mailto:amankaushik481@icloud.com">amankaushik481@icloud.com</a></p>
+        </div>
+
+        <div class="links">
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </div>
+
+        <footer>
+            <p>© 2024 Alarm Clock - Scan To Wake. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
+
